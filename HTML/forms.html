@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Forms
+    </title>
+</head>
+<body>
+    <!-- Forms are used to collect data from users, for example in sign in, sign up, help requests, contact me etc -->
+    <!-- form tag : used to create a form -->
+    <!-- action attribute is used to define what action needs to be performed when a form is submitted -->
+    <h3>Student Registration Form</h3>
+    <form action="/script.js">
+        <input type="text" placeholder="Enter your mail" id="">
+        <br>
+        <br>
+        <input type="password" placeholder="Enter your password">
+        <br>
+        <br>
+        <!-- radio buttons -->
+        <p>Select your class</p>
+        <label for="101">
+            <input type="radio" value="Class XI" name="class" id="101">Class XI
+        </label>
+        <label for="102">
+            <input type="radio" value="Class XII" name="class" id="102">Class XII
+        </label>
+        <br>
+        <br>
+        <!-- Difference between class and id : id is unique, class is not unique and classes are used for grouping and applying styles to multiple elements, while ids are used to uniquely identify individual elements on the page.-->
+
+        <!-- checkboxes -->
+        <p>Choose your preferred subjects</p>
+        <label for="math">
+            <input type="checkbox" name="subject" value="math" id="101">Math
+        </label>
+        <label for="physics">
+            <input type="checkbox" name="subject" value="physics" id="102">Physics
+        </label>
+        <label for="chemistry">
+            <input type="checkbox" name="subject" value="chemistry" id="103">chemistry
+        </label>
+        <br>
+        <br>
+
+        <!-- Textarea -->
+        <p>feedback Form</p>
+        <textarea name="feedback" id="101" cols="200" rows="10" placeholder="Enter your experience with our website"></textarea>
+        <br>
+        <br>
+
+        <!-- Dropdown : select tag -->
+        <p>Select your gender</p>
+        <select name="gender" id="101">
+            <option value="male">Male</option>
+            <option value="female">Female</option>
+            <option value="other">Other</option>
+        </select>
+        <br>
+        <br>
+
+        <input type="submit" value="Submit">
+
+    </form>
+</body>
+</html>
